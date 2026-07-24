@@ -1,7 +1,24 @@
 aid: blekko
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/blekko.png
 name: Blekko
-description: Blekko is a company surfaced as a portfolio company of uncork-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Blekko was a web search engine founded in 2007 by Rich Skrenta, Tom Annau, and Mike Markson
+  and launched publicly in 2010. It was best known for "slashtags" — user-applied /slashtag filters that
+  curated and narrowed search results by category as a spam-resistant alternative to mainstream search
+  engines — and it exposed a developer search API. Blekko was acquired by IBM in March 2015, where its
+  technology and team were folded into the IBM Watson group and its consumer search engine was shut down.
+  This API Evangelist profile is retained as a historical/defunct record; the company no longer operates
+  a live website or public API (blekko.com resolves in DNS but no longer serves HTTPS).
 url: https://raw.githubusercontent.com/api-evangelist/blekko/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +26,27 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-defunct-reason: acquired by IBM (March 2015); consumer search engine shut down and technology folded into IBM Watson
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Search
+- Search Engine
+- Web Search
+- Discovery
+- Defunct
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
